@@ -1,6 +1,6 @@
 {
   "packOptions": {
-    "summary": "UFR Entity Framework Implementation",
+    "summary": "URF Entity Framework Implementation",
     "tags": [ "repository", "unitofwork", "pattern", "entity framework" ],
     "owners": [ "dopare" ],
     "projectUrl": "https://github.com/dopare/URF.NET",
@@ -11,7 +11,7 @@
     }
   },
   "authors": [ "Mkrtich Mazmanyan" ],
-  "description": "UFR Entity Framework Implementation",
+  "description": "URF Entity Framework Implementation",
   "version": "1.0.0-*",
   "title": "URF Entity Framework",
   "copyright": "Copyright (c) 2016 Mkrtich Mazmanyan",
