@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using URF.Core.Infrastructure;
+using URF.Abstractions.Infrastructure;
 
-namespace URF.Core.Repositories
+namespace URF.Abstractions.Repositories
 {
     public interface IQueryFluent<TEntity> where TEntity : IObjectState
     {

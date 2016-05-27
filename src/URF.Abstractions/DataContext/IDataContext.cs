@@ -1,7 +1,7 @@
 ﻿using System;
-using URF.Core.Infrastructure;
+using URF.Abstractions.Infrastructure;
 
-namespace URF.Core.DataContext
+namespace URF.Abstractions.DataContext
 {
     public interface IDataContext : IDisposable
     {

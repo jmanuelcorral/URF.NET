@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Threading;
 using System.Threading.Tasks;
-using URF.Core.DataContext;
-using URF.Core.Infrastructure;
+using URF.Abstractions.DataContext;
+using URF.Abstractions.Infrastructure;
 
 namespace URF.EntityFramework
 {

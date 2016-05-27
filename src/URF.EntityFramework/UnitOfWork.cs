@@ -14,10 +14,10 @@ using System.Data.Entity.Infrastructure;
 using System.Data.Entity.Core.Objects;
 using Microsoft.Practices.ServiceLocation;
 #endif
-using URF.Core.DataContext;
-using URF.Core.Repositories;
-using URF.Core.UnitOfWork;
-using URF.Core.Infrastructure;
+using URF.Abstractions.DataContext;
+using URF.Abstractions.Repositories;
+using URF.Abstractions.UnitOfWork;
+using URF.Abstractions.Infrastructure;
 
 namespace URF.EntityFramework
 {

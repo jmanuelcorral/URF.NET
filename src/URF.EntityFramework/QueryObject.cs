@@ -2,7 +2,7 @@
 using System;
 using System.Linq.Expressions;
 using LinqKit;
-using URF.Core.Repositories;
+using URF.Abstractions.Repositories;
 
 namespace URF.EntityFramework
 {

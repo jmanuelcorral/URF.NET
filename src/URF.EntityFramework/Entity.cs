@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-using URF.Core.Infrastructure;
+using URF.Abstractions.Infrastructure;
 
 namespace URF.EntityFramework
 {

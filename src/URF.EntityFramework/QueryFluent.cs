@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using URF.Core.Infrastructure;
-using URF.Core.Repositories;
+using URF.Abstractions.Infrastructure;
+using URF.Abstractions.Repositories;
 
 namespace URF.EntityFramework
 {

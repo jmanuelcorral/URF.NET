@@ -2,7 +2,7 @@
 using System;
 using System.Linq.Expressions;
 
-namespace URF.Core.Repositories
+namespace URF.Abstractions.Repositories
 {
     public interface IQueryObject<TEntity>
     {

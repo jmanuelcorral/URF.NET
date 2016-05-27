@@ -6,7 +6,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Data.Entity;
-using URF.Core.Infrastructure;
+using URF.Abstractions.Infrastructure;
 
 namespace URF.EntityFramework
 {

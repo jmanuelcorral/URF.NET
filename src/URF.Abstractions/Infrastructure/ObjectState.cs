@@ -1,4 +1,4 @@
-﻿namespace URF.Core.Infrastructure
+﻿namespace URF.Abstractions.Infrastructure
 {
     public enum ObjectState
     {

@@ -11,9 +11,9 @@
     }
   },
   "authors": [ "Mkrtich Mazmanyan" ],
-  "description": "URF - Unit of Work & (extensible/generic) Repositories Framework",
+  "description": "This framework minimizes the surface area of your ORM technlogy from disseminating in your application. Framework provides an elegant way to implement a reusable and extensible Unit of Work and Repository pattern.",
   "version": "1.0.0-*",
-  "title": "URF Core",
+  "title": "URF Abstractions",
   "copyright": "Copyright (c) 2016 Mkrtich Mazmanyan",
   "dependencies": {
   },

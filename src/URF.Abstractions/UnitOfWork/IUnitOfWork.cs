@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Data;
-using URF.Core.Infrastructure;
-using URF.Core.Repositories;
+using URF.Abstractions.Infrastructure;
+using URF.Abstractions.Repositories;
 
-namespace URF.Core.UnitOfWork
+namespace URF.Abstractions.UnitOfWork
 {
     public interface IUnitOfWork : IDisposable
     {

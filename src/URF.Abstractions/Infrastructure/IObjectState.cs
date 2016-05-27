@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace URF.Core.Infrastructure
+namespace URF.Abstractions.Infrastructure
 {
     public interface IObjectState
     {

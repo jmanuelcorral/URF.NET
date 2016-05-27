@@ -6,8 +6,8 @@ using Microsoft.EntityFrameworkCore;
 #else
 using System.Data.Entity;
 #endif
-using URF.Core.DataContext;
-using URF.Core.Infrastructure;
+using URF.Abstractions.DataContext;
+using URF.Abstractions.Infrastructure;
 
 namespace URF.EntityFramework
 {

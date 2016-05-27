@@ -4,9 +4,9 @@ using System.Linq.Expressions;
 # endif
 using System.Linq;
 using System.Collections.Generic;
-using URF.Core.Infrastructure;
+using URF.Abstractions.Infrastructure;
 
-namespace URF.Core.Repositories
+namespace URF.Abstractions.Repositories
 {
     public interface IRepository<TEntity> where TEntity : class, IObjectState
     {

@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 #else
 using System.Data.Entity;
 #endif
-using URF.Core.Infrastructure;
+using URF.Abstractions.Infrastructure;
 
 namespace URF.EntityFramework
 {

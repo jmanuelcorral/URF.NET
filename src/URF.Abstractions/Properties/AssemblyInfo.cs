@@ -6,11 +6,11 @@ using System;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("URF.Core")]
+[assembly: AssemblyTitle("URF.Abstractions")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("URF.Core")]
+[assembly: AssemblyProduct("URF.Abstractions")]
 [assembly: AssemblyCopyright("Copyright © Mkrtich Mazmanyan 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

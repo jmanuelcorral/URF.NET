@@ -1,8 +1,8 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using URF.Core.Infrastructure;
+using URF.Abstractions.Infrastructure;
 
-namespace URF.Core.Repositories
+namespace URF.Abstractions.Repositories
 {
     public interface IRepositoryAsync<TEntity> : IRepository<TEntity> where TEntity : class, IObjectState
     {

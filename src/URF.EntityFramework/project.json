@@ -1,6 +1,6 @@
 {
   "packOptions": {
-    "summary": "URF Entity Framework Implementation",
+    "summary": "Unit of Work & (extensible/generic) Repositories Framework",
     "tags": [ "repository", "unitofwork", "pattern", "entity framework" ],
     "owners": [ "dopare" ],
     "projectUrl": "https://github.com/dopare/URF.NET",
@@ -11,12 +11,12 @@
     }
   },
   "authors": [ "Mkrtich Mazmanyan" ],
-  "description": "URF Entity Framework Implementation",
+  "description": "This framework minimizes the surface area of your ORM technlogy from disseminating in your application. Framework provides an elegant way to implement a reusable and extensible Unit of Work and Repository pattern.",
   "version": "1.0.0-*",
   "title": "URF Entity Framework",
   "copyright": "Copyright (c) 2016 Mkrtich Mazmanyan",
   "dependencies": {
-    "URF.Core": {
+    "URF.Abstractions": {
       "version": "1.0.0-*",
       "target": "project"
     }
@@ -33,7 +33,7 @@
       "dependencies": {
         "EntityFramework": "6.1.3",
         "LinqKit": "1.1.3.1",
-        "CommonServiceLocator":  "1.3.0"
+        "CommonServiceLocator": "1.3.0"
       }
     },
     "net451": {

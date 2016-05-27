@@ -11,10 +11,10 @@ using Microsoft.EntityFrameworkCore;
 using System.Data.Entity;
 using LinqKit;
 #endif
-using URF.Core.DataContext;
-using URF.Core.Infrastructure;
-using URF.Core.Repositories;
-using URF.Core.UnitOfWork;
+using URF.Abstractions.DataContext;
+using URF.Abstractions.Infrastructure;
+using URF.Abstractions.Repositories;
+using URF.Abstractions.UnitOfWork;
 
 namespace URF.EntityFramework
 {
