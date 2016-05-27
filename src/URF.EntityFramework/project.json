@@ -12,7 +12,7 @@
   },
   "authors": [ "Mkrtich Mazmanyan" ],
   "description": "This framework minimizes the surface area of your ORM technlogy from disseminating in your application. Framework provides an elegant way to implement a reusable and extensible Unit of Work and Repository pattern.",
-  "version": "1.0.0-*",
+  "version": "1.0.1-*",
   "title": "URF Entity Framework",
   "copyright": "Copyright (c) 2016 Mkrtich Mazmanyan",
   "dependencies": {
