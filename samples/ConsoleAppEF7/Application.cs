@@ -4,9 +4,9 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using URF.Core.Repositories;
 using URF.Core.UnitOfWork;
-using ConsoleApp.Models;
+using ConsoleAppEF7.Models;
 
-namespace ConsoleApp
+namespace ConsoleAppEF7
 {
     public class Application
     {

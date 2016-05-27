@@ -9,9 +9,11 @@
       "type": "platform",
       "version": "1.0.0-rc2-3002702"
     },
-    "URF.Core.EFCore": "1.0.0-*",
+    "URF.EntityFramework": {
+      "version": "1.0.0",
+      "target": "package"
+    },
     "Microsoft.Extensions.DependencyInjection": "1.0.0-rc2-final",
-    "Microsoft.EntityFrameworkCore.InMemory": "1.0.0-rc2-final",
     "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-rc2-final",
     "Microsoft.EntityFrameworkCore.Tools": {
       "version": "1.0.0-preview1-final",

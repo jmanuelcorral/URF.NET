@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using URF.Core.EFCore;
-using ConsoleApp.Models;
+using ConsoleAppEF7.Models;
+using URF.EntityFramework;
 
-namespace ConsoleApp.Data
+namespace ConsoleAppEF7.Data
 {
     public class AppDbContext : DataContext
     {

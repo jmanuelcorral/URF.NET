@@ -1,7 +1,7 @@
 ﻿using System;
-using URF.Core.EFCore;
+using URF.EntityFramework;
 
-namespace ConsoleApp.Models
+namespace ConsoleAppEF7.Models
 {
     public class Person : Entity
     {

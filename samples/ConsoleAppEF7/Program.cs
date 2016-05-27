@@ -4,13 +4,13 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using URF.Core.DataContext;
-using URF.Core.EFCore;
 using URF.Core.UnitOfWork;
 using URF.Core.Repositories;
-using ConsoleApp.Data;
-using ConsoleApp.Models;
+using URF.EntityFramework;
+using ConsoleAppEF7.Data;
+using ConsoleAppEF7.Models;
 
-namespace ConsoleApp
+namespace ConsoleAppEF7
 {
     public class Program
     {
@@ -28,7 +28,6 @@ namespace ConsoleApp
             var services = new ServiceCollection();
 
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            //services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase());
 
             services.AddScoped<IDataContextAsync, AppDbContext>();
             services.AddScoped<IUnitOfWorkAsync, UnitOfWork>();

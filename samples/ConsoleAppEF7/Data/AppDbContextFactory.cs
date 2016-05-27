@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ConsoleApp.Data
+namespace ConsoleAppEF7.Data
 {
     public class AppDbContextFactory : IDbContextFactory<AppDbContext>
     {

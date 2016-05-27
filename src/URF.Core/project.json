@@ -4,7 +4,7 @@
     "tags": [ "repository", "unitofwork", "pattern" ],
     "owners": [ "dopare" ],
     "projectUrl": "https://github.com/dopare/URF.NET",
-    "licenseUrl": "https://github.com/dopare/URF.NET/License.txt",
+    "licenseUrl": "https://github.com/dopare/URF.NET/blob/master/License.txt",
     "repository": {
       "type": "git",
       "url": "https://github.com/dopare/URF.NET"
@@ -18,7 +18,7 @@
   "dependencies": {
   },
   "buildOptions": {
-    "warningsAsErrors": false
+    "warningsAsErrors": true
   },
   "frameworks": {
     "net45": {

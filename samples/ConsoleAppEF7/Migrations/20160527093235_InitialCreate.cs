@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace ConsoleApp.Migrations
+namespace ConsoleAppEF7.Migrations
 {
     public partial class InitialCreate : Migration
     {
