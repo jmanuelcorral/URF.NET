@@ -1,0 +1,48 @@
+{
+  "packOptions": {
+    "summary": "Unit of Work & (extensible/generic) Repositories Framework",
+    "tags": [ "repository", "unitofwork", "pattern" ],
+    "owners": [ "dopare" ],
+    "projectUrl": "https://github.com/dopare/URF.NET",
+    "licenseUrl": "https://github.com/dopare/URF.NET/License.txt",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/dopare/URF.NET"
+    }
+  },
+  "authors": [ "Mkrtich Mazmanyan" ],
+  "description": "URF - Unit of Work & (extensible/generic) Repositories Framework",
+  "version": "1.0.0-*",
+  "title": "URF Core",
+  "copyright": "Copyright (c) 2016 Mkrtich Mazmanyan",
+  "dependencies": {
+  },
+  "buildOptions": {
+    "warningsAsErrors": false
+  },
+  "frameworks": {
+    "net45": {
+      "frameworkAssemblies": {
+        "System.Data": "4.0.0.0",
+        "System.ComponentModel.DataAnnotations": "4.0.0.0"
+      }
+    },
+    "net451": {
+      "frameworkAssemblies": {
+        "System.Data": "4.0.0.0",
+        "System.ComponentModel.DataAnnotations": "4.0.0.0"
+      }
+    },
+    "netstandard1.3": {
+      "buildOptions": {
+        "define": [ "COREFX" ]
+      },
+      "dependencies": {
+        "NETStandard.Library": "1.5.0-rc2-24027",
+        "System.ComponentModel.Annotations": "4.1.0-rc2-24027",
+        "System.Data.Common": "4.0.1-rc2-24027",
+        "System.Linq.Expressions": "4.0.11-rc2-24027"
+      }
+    }
+  }
+}
