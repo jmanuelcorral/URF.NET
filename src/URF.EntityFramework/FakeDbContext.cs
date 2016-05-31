@@ -20,9 +20,7 @@ namespace URF.EntityFramework
 
     public abstract class FakeDbContext : IFakeDbContext
     {
-        #region Private Fields  
         private readonly Dictionary<Type, object> _fakeDbSets;
-        #endregion Private Fields
 
         protected FakeDbContext()
         {

@@ -12,10 +12,8 @@ namespace URF.EntityFramework
 {
     public abstract class FakeDbSet<TEntity> : DbSet<TEntity>, IDbSet<TEntity> where TEntity : Entity, new()
     {
-#region Private Fields
         private readonly ObservableCollection<TEntity> _items;
         private readonly IQueryable _query;
-#endregion Private Fields
 
         protected FakeDbSet()
         {

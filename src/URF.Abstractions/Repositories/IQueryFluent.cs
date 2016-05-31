@@ -1,5 +1,4 @@
-﻿#if !COREFX
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
@@ -16,7 +15,8 @@ namespace URF.Abstractions.Repositories
         IEnumerable<TResult> Select<TResult>(Expression<Func<TEntity, TResult>> selector = null);
         IEnumerable<TEntity> Select();
         Task<IEnumerable<TEntity>> SelectAsync();
+#if !COREFX
         IQueryable<TEntity> SqlQuery(string query, params object[] parameters);
+#endif
     }
 }
-#endif

@@ -1,5 +1,4 @@
-﻿#if !COREFX
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
@@ -11,12 +10,10 @@ namespace URF.EntityFramework
 {
     public sealed class QueryFluent<TEntity> : IQueryFluent<TEntity> where TEntity : class, IObjectState
     {
-        #region Private Fields
         private readonly Expression<Func<TEntity, bool>> _expression;
         private readonly List<Expression<Func<TEntity, object>>> _includes;
         private readonly Repository<TEntity> _repository;
         private Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> _orderBy;
-        #endregion Private Fields
 
         #region Constructors
         public QueryFluent(Repository<TEntity> repository)
@@ -54,7 +51,8 @@ namespace URF.EntityFramework
 
         public async Task<IEnumerable<TEntity>> SelectAsync() { return await _repository.SelectAsync(_expression, _orderBy, _includes); }
 
+#if !COREFX
         public IQueryable<TEntity> SqlQuery(string query, params object[] parameters) { return _repository.SelectQuery(query, parameters).AsQueryable(); }
+#endif
     }
 }
-#endif

@@ -1,5 +1,4 @@
-﻿#if !COREFX
-using System;
+﻿using System;
 using System.Linq.Expressions;
 
 namespace URF.Abstractions.Repositories
@@ -13,4 +12,3 @@ namespace URF.Abstractions.Repositories
         Expression<Func<TEntity, bool>> Or(IQueryObject<TEntity> queryObject);
     }
 }
-#endif

@@ -1,8 +1,6 @@
-﻿#if !COREFX
-using System;
-using System.Linq.Expressions;
-# endif
+﻿using System;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Collections.Generic;
 using URF.Abstractions.Infrastructure;
 
@@ -21,11 +19,9 @@ namespace URF.Abstractions.Repositories
         void Update(TEntity entity);
         void Delete(object id);
         void Delete(TEntity entity);
-#if !COREFX
         IQueryFluent<TEntity> Query(IQueryObject<TEntity> queryObject);
         IQueryFluent<TEntity> Query(Expression<Func<TEntity, bool>> query);
         IQueryFluent<TEntity> Query();
-#endif
         IQueryable<TEntity> Queryable();
         IRepository<T> GetRepository<T>() where T : class, IObjectState;
     }

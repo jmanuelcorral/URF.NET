@@ -1,7 +1,6 @@
-﻿#if !COREFX
-using System;
+﻿using System;
 using System.Linq.Expressions;
-using LinqKit;
+using LinqKit.Core;
 using URF.Abstractions.Repositories;
 
 namespace URF.EntityFramework
@@ -36,4 +35,3 @@ namespace URF.EntityFramework
         }
     }
 }
-#endif

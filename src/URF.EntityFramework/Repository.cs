@@ -4,13 +4,13 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Reflection;
 #if COREFX
+using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 #else
 using System.Data.Entity;
-using LinqKit;
 #endif
+using LinqKit.Core;
 using URF.Abstractions.DataContext;
 using URF.Abstractions.Infrastructure;
 using URF.Abstractions.Repositories;
@@ -122,7 +122,6 @@ namespace URF.EntityFramework
             _context.SyncObjectState(entity);
         }
 
-#if !COREFX
         public IQueryFluent<TEntity> Query()
         {
             return new QueryFluent<TEntity>(this);
@@ -138,10 +137,12 @@ namespace URF.EntityFramework
             return new QueryFluent<TEntity>(this, queryObject);
         }
 
+#if !COREFX
         public IQueryable<TEntity> SelectQuery(string query, params object[] parameters)
         {
             return _dbSet.SqlQuery(query, parameters).AsQueryable();
         }
+#endif
 
         internal IQueryable<TEntity> Select(
             Expression<Func<TEntity, bool>> filter = null,
@@ -180,7 +181,6 @@ namespace URF.EntityFramework
         {
             return await Select(filter, orderBy, includes, page, pageSize).ToListAsync();
         }
-#endif
 
         // tracking of all processed entities in the object graph when calling SyncObjectGraph
         HashSet<object> _entitesChecked;
