@@ -12,15 +12,15 @@
   },
   "authors": [ "Mkrtich Mazmanyan" ],
   "description": "This framework minimizes the surface area of your ORM technlogy from disseminating in your application. Framework provides an elegant way to implement a reusable and extensible Unit of Work and Repository pattern.",
-  "version": "1.0.2-*",
+  "version": "1.0.3-*",
   "title": "URF Entity Framework",
   "copyright": "Copyright (c) 2016 Mkrtich Mazmanyan",
   "dependencies": {
     "URF.Abstractions": {
-      "version": "1.0.1-*",
+      "version": "1.0.2-*",
       "target": "project"
     },
-    "LinqKit.Core": "1.0.1"
+    "LinqKit.Core": "1.0.2"
   },
   "buildOptions": {
     "warningsAsErrors": true
@@ -52,11 +52,11 @@
         "define": [ "COREFX" ]
       },
       "dependencies": {
-        "NETStandard.Library": "1.5.0-rc2-24027",
-        "System.ComponentModel.Annotations": "4.1.0-rc2-24027",
-        "System.Data.Common": "4.0.1-rc2-24027",
-        "System.Linq.Expressions": "4.0.11-rc2-24027",
-        "Microsoft.EntityFrameworkCore": "1.0.0-rc2-final"
+        "NETStandard.Library": "1.6.0",
+        "System.ComponentModel.Annotations": "4.1.0",
+        "System.Data.Common": "4.1.0",
+        "System.Linq.Expressions": "4.1.0",
+        "Microsoft.EntityFrameworkCore": "1.0.0"
       }
     }
   }
